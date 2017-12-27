@@ -31,7 +31,7 @@ Você pode gerar suas próprias API Keys para consumir as APIs, mas se quiser us
 
 ### O que nós esperamos do seu teste
 
-* Ver na solução a utilização do framework Angular, que é o fwk utilizado por aqui. Utilize o angular da melhor forma possível (metodologia/estrutura). Escolha a versão do ecmascript que lhe agrade
+* Ver na solução a utilização de um framework da sua escolha, mas por aqui utilizamos o AngularJS 1.x. Utilize o framework da melhor forma possível (metodologia/estrutura). Escolha a versão do ecmascript que lhe agrade
 * Tambér ver a utilização de dependency managers (npm, webpack, bower)
 * Automação de tasks com gulp, grunt ou outra ferramenta de sua escolha
 * Um HTML escrito da maneira mais semântica possível (HTML5/5.1)
