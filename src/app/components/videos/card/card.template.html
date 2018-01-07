@@ -1,9 +1,10 @@
-<div class="card" style="width: 18rem;">
+<div class="card">
+  <img class="card-img-top" src="{{$ctrl.card.snippet.thumbnails.high.url}}" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">{{$ctrl.card.snippet.title}}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
     <p class="card-text">{{$ctrl.card.snippet.description}}</p>
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+    <p class="card-text">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </p>
   </div>
 </div>
