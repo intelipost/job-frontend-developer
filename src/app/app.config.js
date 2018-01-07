@@ -7,13 +7,18 @@ function config($stateProvider, $urlServiceProvider) {
   });
 
   $stateProvider.state('home.videos', {
-    url: '/:bandName',
-    component: 'videos',
+    url: ':bandName',
+    views: {
+      "$default@^.^": {
+        component: 'videos',
+      }
+    },
     resolve: {
       searchResult: function ($transition$, youtubeService) {
         let bandName = $transition$.params().bandName;
         return youtubeService.getSearchResults(bandName);
-      }
+      },
+      
     },
   });
 

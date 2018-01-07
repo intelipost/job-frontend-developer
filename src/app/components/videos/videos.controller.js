@@ -1,10 +1,17 @@
 class VideosController {
-    constructor(VideosService, searchResult ) {
-        console.log(searchResult);
+    constructor($state) {
+        this.$onInit = this.$onInit.bind(this);
+    }
+ 
+
+    $onInit() {
+        console.log(this.searchResult.data.items);
+
     }
 
 }
 
 
-export default SearchController;
+VideosController.$inject = ['$state'];
+export default VideosController;
 
