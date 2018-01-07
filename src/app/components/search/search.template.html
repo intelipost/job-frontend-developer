@@ -1,13 +1,12 @@
             <div class="row">
                 <div class="col-sm-10 offset-sm-1 text-center">
-                    <h1 class="display-3">Search Band </h1>
                     <div class="info-form">
                         <form action="" class="form-inline justify-content-center">
                             <div class="form-group">
                                 <label class="sr-only">Name</label>
-                                <input ng-model="ctrl.bandName" type="text" class="form-control" placeholder="Band">
+                                <input ng-model="$ctrl.bandName" type="text" class="form-control" placeholder="Band">
                             </div>
-                            <button ui-sref=".videos({ bandName: ctrl.bandName })" type="submit" class="btn btn-success ">Search!</button>
+                            <button ui-sref=".videos({ bandName: $ctrl.bandName })" type="submit" class="btn btn-success ">Search!</button>
                         </form>
                     </div>
                 </div>

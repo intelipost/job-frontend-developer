@@ -11,7 +11,7 @@ export default
       bindings: { search: '<' },
       controller: SearchController,
       template: SearchTemplate,
-      controllerAs: 'ctrl',
+      controllerAs: '$ctrl',
     })
     .service('search.service', SearchService)
     .name;

@@ -9,9 +9,8 @@ export default
         .component('videos', {
             bindings: { searchResult: '<' } ,
             controller: VideosController,
-            bindToController: { searchResult: '<' },
             template: VideosTemplate,
-            controllerAs: 'ctrl',
+            controllerAs: '$ctrl',
         })
         .name;
 

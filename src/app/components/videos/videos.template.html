@@ -1,3 +1,5 @@
+<search></search>
 
-Ola
-{{ctrl.searchResult}}
+<ul>
+    <card ng-repeat="card in $ctrl.videos" card="card" onToggleActive="$ctrl.toggleActive(cardId)"></card>
+</ul>
