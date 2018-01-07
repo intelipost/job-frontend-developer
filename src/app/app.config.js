@@ -1,9 +1,9 @@
 function config ($stateProvider, $urlServiceProvider) {
-    $urlServiceProvider.rules.otherwise({ state: 'home' });
+    $urlServiceProvider.rules.otherwise({ state: 'search' });
     
-    $stateProvider.state('home', {
+    $stateProvider.state('search', {
       url: '/',
-      component: 'home',
+      component: 'search',
       resolve: {}
     });
   };
