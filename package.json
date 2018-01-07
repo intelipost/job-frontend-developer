@@ -23,6 +23,7 @@
     "@uirouter/angularjs": "^1.0.12",
     "angular": "^1.5.0",
     "angular-ui-router": "^1.0.3",
+    "axios": "^0.17.1",
     "bootstrap": "^4.0.0-beta.3",
     "sass-loader": "^6.0.6"
   },

@@ -1,8 +1,6 @@
 class SearchController {
     constructor(SearchService) {
         this.SearchService = SearchService;
-        this.name = "Gustavo";
-
     }
 
    async submit(bandName){
