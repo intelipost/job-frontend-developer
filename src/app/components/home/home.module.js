@@ -1,6 +1,7 @@
 import angular from 'angular';
 
 import HomeTemplate from './home.template.html';
+import '../../../style/app.less';
 
 export default
 
