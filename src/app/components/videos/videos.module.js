@@ -7,7 +7,7 @@ export default
 
     angular.module('app.videos', [])
         .component('videos', {
-            bindings: { searchResult: '<' } ,
+            bindings: { searchResult: '<', bandInfo: '<'} ,
             controller: VideosController,
             template: VideosTemplate,
             controllerAs: '$ctrl',

@@ -10,7 +10,8 @@ class VideosController {
       };
 
     $onInit() {
-        this.videos = this.searchResult.items; 
+        this.videos = this.searchResult.items;
+        this.externalLinks = this.bandInfo.externalLinks; 
         console.log(this.videos);
         console.log(this.bandInfo);
 

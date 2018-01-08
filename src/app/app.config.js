@@ -18,7 +18,11 @@ function config($stateProvider, $urlServiceProvider) {
         let bandName = $transition$.params().bandName;
         return youtubeService.getSearchResults(bandName);
       },
-      
+      bandInfo: function($transition$, ticketMasterService){
+        let bandName = $transition$.params().bandName;
+        return ticketMasterService.getBandInfo(bandName);
+      }
+     
     },
   });
 
