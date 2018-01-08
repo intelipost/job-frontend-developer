@@ -1,14 +1,10 @@
-            <div class="row">
-                <div class="col-sm-10 offset-sm-1 text-center">
-                    <div class="info-form">
-                        <form action="" class="form-inline justify-content-center">
-                            <div class="form-group">
-                                <label class="sr-only">Name</label>
-                                <input ng-model="$ctrl.bandName" type="text" class="form-control" placeholder="Band">
-                            </div>
-                            <button ui-sref="home.videos({ bandName: $ctrl.bandName })" type="submit" class="btn btn-success ">Search!</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-    
+<div id="custom-search-input">
+    <form action="" class="input-group col-md-12">
+        <input ng-model="$ctrl.bandName" type="text" class="form-control input-lg" placeholder="Buscar" />
+        <span class="input-group-btn">
+            <button class="btn btn-info btn-lg" type="submit" ui-sref="videos({ bandName: $ctrl.bandName })">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+        </span>
+    </form>
+</div>

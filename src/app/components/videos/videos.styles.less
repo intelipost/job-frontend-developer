@@ -1,0 +1,25 @@
+
+@color_1: rgb(8, 8, 8);
+@color_2: rgb(247, 241, 241);
+@background_color_1: #0a0a0a;
+
+#masonry{
+    background-color: @background_color_1;
+    color: @color_1;
+    height: 550px;
+    overflow-y: auto;
+
+    a {
+        color: @color_2;
+        &:focus {
+            color: @color_2;
+        }
+        &:hover {
+            color: @color_2;
+        }
+    }
+
+    .homepage{
+        color: @color_1;
+    } 
+}

@@ -6,23 +6,19 @@ function config($stateProvider, $urlServiceProvider) {
     component: 'home'
   });
 
-  $stateProvider.state('home.videos', {
-    url: ':bandName',
-    views: {
-      "$default@^.^": {
-        component: 'videos',
-      }
-    },
+  $stateProvider.state('videos', {
+    url: '/:bandName',
+    component: 'videos',
     resolve: {
       searchResult: function ($transition$, youtubeService) {
         let bandName = $transition$.params().bandName;
         return youtubeService.getSearchResults(bandName);
       },
-      bandInfo: function($transition$, ticketMasterService){
+      bandInfo: function ($transition$, ticketMasterService) {
         let bandName = $transition$.params().bandName;
         return ticketMasterService.getBandInfo(bandName);
       }
-     
+
     },
   });
 

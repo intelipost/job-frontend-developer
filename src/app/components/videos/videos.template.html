@@ -1,26 +1,32 @@
-<search></search>
-
-<div class="card-columns">
-    <div id="bandInfo" class="card">
-        <a href="https://www.youtube.com/watch?v={{$ctrl.card.id.videoId}}">
-            <img class="card-img-top" src="{{$ctrl.bandInfo.images[0].url}}" alt="Card image cap">
-        </a>
-        <div class="card-body">
-            <h2 class="card-title">{{$ctrl.bandInfo.name}}</h2>
-            <a href="{{$ctrl.externalLinks.homepage[0].url}}">
-                <p class="card-text">{{$ctrl.externalLinks.homepage[0].url}}</p>
+<br>
+<div class="container-fluid">
+    <search></search>
+</div>
+<br>
+<div id="masonry" class="container">
+    <br>
+    <div class="card-columns">
+        <div id="bandInfo" class="card">
+            <a href="https://www.youtube.com/watch?v={{$ctrl.card.id.videoId}}">
+                <img class="card-img-top" src="{{$ctrl.bandInfo.images[0].url}}" alt="Card image cap">
             </a>
-            <a ng-if="$ctrl.externalLinks.twitter" class="btn btn-social-icon btn-twitter" href="{{$ctrl.externalLinks.twitter[0].url}}">
-                <span class="fa fa-twitter"></span>
-            </a>
-            <a ng-if="$ctrl.externalLinks.facebook" class="btn btn-social-icon btn-instagram" href="{{$ctrl.externalLinks.facebook[0].url}}">
-                <span class="fa fa-facebook"></span>
-            </a>
-            <a ng-if="$ctrl.externalLinks.twitter" class="btn btn-social-icon btn-instagram" href="{{$ctrl.externalLinks.instagram[0].url}}">
-                <span class="fa fa-instagram"></span>
-            </a>
+            <div class="card-body">
+                <h2 class="card-title">{{$ctrl.bandInfo.name}}</h2>
+                <a href="{{$ctrl.externalLinks.homepage[0].url}}">
+                    <p class="card-text homepage">{{$ctrl.externalLinks.homepage[0].url}}</p>
+                </a>
+                <a ng-if="$ctrl.externalLinks.twitter" class="btn btn-social-icon btn-twitter" href="{{$ctrl.externalLinks.twitter[0].url}}">
+                    <span class="fa fa-twitter"></span>
+                </a>
+                <a ng-if="$ctrl.externalLinks.facebook" class="btn btn-social-icon btn-instagram" href="{{$ctrl.externalLinks.facebook[0].url}}">
+                    <span class="fa fa-facebook"></span>
+                </a>
+                <a ng-if="$ctrl.externalLinks.twitter" class="btn btn-social-icon btn-instagram" href="{{$ctrl.externalLinks.instagram[0].url}}">
+                    <span class="fa fa-instagram"></span>
+                </a>
+            </div>
         </div>
-    </div>
 
-    <card ng-repeat="card in $ctrl.videos" card="card" onToggleActive="$ctrl.toggleActive(cardId)"></card>
+        <card ng-repeat="card in $ctrl.videos" card="card" onToggleActive="$ctrl.toggleActive(cardId)"></card>
+    </div>
 </div>
