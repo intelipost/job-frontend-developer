@@ -5,14 +5,16 @@ import Search from './components/search/search.module';
 import Home from './components/home/home.module';
 import Videos from './components/videos/videos.module';
 import Card from './components/videos/card/card.module';
-import YoutubeService from './services/youtube.service'
-
+import BandInfo from './components/videos/bandInfo/bandInfo.module';
+import youtubeService from './services/youtube';
+import ticketMasterService from './services/ticketmaster';
 
 const MODULE_NAME = 'app';
 
 angular
 .module('app', [uiRouter, Home, Search, Videos, Card])
-.service('youtubeService', YoutubeService)
+.factory('youtubeService', youtubeService)
+.factory('ticketMasterService', ticketMasterService)
 .config(config);
 
 

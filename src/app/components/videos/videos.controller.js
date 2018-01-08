@@ -10,8 +10,9 @@ class VideosController {
       };
 
     $onInit() {
-        this.videos = this.searchResult.data.items; 
+        this.videos = this.searchResult.items; 
         console.log(this.videos);
+        console.log(this.bandInfo);
 
     }
 
