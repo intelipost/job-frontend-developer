@@ -1,67 +1,37 @@
-@color_1: #fff;
-@color_2: #333;
-@color_3: rgba(255, 255, 255, .5);
-@background_color_1: #fff;
-@background_color_2: #333;
-@background_color_3: transparent;
-@border_bottom_color_1: rgba(255, 255, 255, .25);
-@border_bottom_color_2: #fff;
+@white: #fff;
+@gray_20	: #333;
+@gray_70: #ffffff80;
 
-/*
- * Globals
- */
-/* Links */
-/* Custom default button */
-/*
- * Base structure
- */
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-/* Padding for spacing */
-/*
- * Header
- */
-/*
- * Cover
- */
-/*
- * Footer
- */
-/*
- * Affix and center
- */
-/* Pull out the header and footer */
-/* Start the vertical centering */
-/* Handle the widths */
 a {
-	color: @color_1;
+	color: @white;
 	&:focus {
-		color: @color_1;
+		color: @white;
 	}
 	&:hover {
-		color: @color_1;
+		color: @white;
 	}
 }
 .btn-secondary {
-	color: @color_2;
+	color: @gray_20	;
 	text-shadow: none;
-	background-color: @background_color_1;
+	background-color: @white;
 	border: .05rem solid #fff;
 	&:hover {
-		color: @color_2;
+		color: @gray_20	;
 		text-shadow: none;
-		background-color: @background_color_1;
+		background-color: @white;
 		border: .05rem solid #fff;
 	}
 	&:focus {
-		color: @color_2;
+		color: @gray_20	;
 		text-shadow: none;
-		background-color: @background_color_1;
+		background-color: @white;
 		border: .05rem solid #fff;
 	}
 }
 html {
 	height: 100%;
-	background-color: @background_color_2;
+	background-color: @gray_20;
 }
 body {
 	background: url(https://source.unsplash.com/1600x900/?music) no-repeat center center fixed;
@@ -70,9 +40,9 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 	height: 100%;
-	background-color: @background_color_2;
+	background-color: @gray_20;
 	text-align: center;
-	color: @color_1;
+	color: @white;
 	overflow: hidden;
 }
 .site-wrapper {
@@ -99,28 +69,6 @@ body {
 .masthead-brand {
 	margin-bottom: 0;
 }
-.nav-masthead {
-	.nav-link {
-		padding: .25rem 0;
-		font-weight: 700;
-		color: @color_3;
-		background-color: @background_color_3;
-		border-bottom: .25rem solid transparent;
-		&:hover {
-			border-bottom-color: @border_bottom_color_1;
-		}
-		&:focus {
-			border-bottom-color: @border_bottom_color_1;
-		}
-		&+.nav-link {
-			margin-left: 1rem;
-		}
-	}
-	.active {
-		color: @color_1;
-		border-bottom-color: @border_bottom_color_2;
-	}
-}
 .cover {
 	padding: 0 1.5rem;
 	.btn-lg {
@@ -129,7 +77,7 @@ body {
 	}
 }
 .mastfoot {
-	color: @color_3;
+	color: @gray_70;
 }
 @media (min-width: 48em) {
 	.masthead-brand {

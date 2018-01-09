@@ -1,34 +1,43 @@
 
-@color_1: rgb(8, 8, 8);
-@color_2: rgb(247, 241, 241);
-@background_color_1: #0a0a0a;
+@white: #ffffff;
+@black: #0a0a0a;
+@gray_3: #080808;
 
 #masonry{
-    background-color: @background_color_1;
-    color: @color_1;
+    background-color: @black;
+    color: @gray_3;
     height: 80vh;
     overflow-y: auto;
 
     a {
-        color: @color_2;
+        color: @white;
         &:focus {
-            color: @color_2;
+            color: @white;
         }
         &:hover {
-            color: @color_2;    
+            color: @white;    
         }
     }
 
     .homepage{
-        color: @color_1;
+        color: @white;
     } 
 
     h5 {
-        text-shadow: 0 1px 3px rgba(0,0,0,.5);
+        text-shadow: 0 1px 3px #00000041;
     }
 
     h2{
-        text-shadow: 0 1px 3px rgba(0,0,0,.5);
+        text-shadow: 0 1px 3px #00000080;
     }
 
+}
+
+#bandInfo{
+    
+    h2{
+        color: @white;
+    }
+
+    background-color: @black;
 }
