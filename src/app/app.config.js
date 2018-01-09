@@ -1,4 +1,8 @@
-function config($stateProvider, $urlServiceProvider) {
+function config($stateProvider, $urlServiceProvider, $locationProvider) {
+
+  $locationProvider
+    .hashPrefix('');
+
   $urlServiceProvider.rules.otherwise({ state: 'home' });
 
   $stateProvider.state('home', {
@@ -28,5 +32,5 @@ function config($stateProvider, $urlServiceProvider) {
 
 };
 
-config.$inject = ['$stateProvider', '$urlServiceProvider'];
+config.$inject = ['$stateProvider', '$urlServiceProvider', '$locationProvider'];
 export default config;

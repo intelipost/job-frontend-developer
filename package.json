@@ -7,10 +7,10 @@
     "server": "webpack-dev-server --history-api-fallback --inline --progress",
     "test": "karma start",
     "test-watch": "karma start --auto-watch --no-single-run",
-    "start": "npm run server",
+    "start": "node server.js",
+    "dev": "npm run server",
     "lint": "eslint ./src/**/*.js",
-    "lint:fix": "eslint ./src/**/*.js --fix",
-    "heroku-postbuild": "npm start"
+    "lint:fix": "eslint ./src/**/*.js --fix"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,8 @@
     "@uirouter/angularjs": "^1.0.12",
     "angular": "^1.5.0",
     "angular-ui-router": "^1.0.3",
-    "bootstrap": "^4.0.0-beta.3"
+    "bootstrap": "^4.0.0-beta.3",
+    "express": "^4.16.2"
   },
   "devDependencies": {
     "angular-mocks": "^1.5.0",
