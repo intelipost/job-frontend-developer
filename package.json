@@ -9,7 +9,8 @@
     "test-watch": "karma start --auto-watch --no-single-run",
     "start": "npm run server",
     "lint": "eslint ./src/**/*.js",
-    "lint:fix": "eslint ./src/**/*.js --fix"
+    "lint:fix": "eslint ./src/**/*.js --fix",
+    "heroku-postbuild": "npm start"
   },
   "repository": {
     "type": "git",
