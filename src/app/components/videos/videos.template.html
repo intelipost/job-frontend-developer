@@ -6,7 +6,7 @@
 <div id="masonry" class="container">
     <br>
     <div class="card-columns">
-        <div ng-if="$ctrl.hasBandInfo" id="bandInfo" class="card">
+        <div ng-if="$ctrl.hasBandInfo" id="bandInfo" class="card ">
             <a href="https://www.youtube.com/watch?v={{$ctrl.card.id.videoId}}">
                 <img src="{{$ctrl.bandInfo.images[0].url}}" class="card-img-top" src="{{$ctrl.bandInfo.images[0].url}}" alt="Card image cap">
             </a>
@@ -15,6 +15,7 @@
                 <a href="{{$ctrl.externalLinks.homepage[0].url}}">
                     <p class="card-text homepage">{{$ctrl.externalLinks.homepage[0].url}}</p>
                 </a>
+                <br>
                 <a ng-if="$ctrl.externalLinks.twitter" class="btn btn-social-icon btn-twitter" href="{{$ctrl.externalLinks.twitter[0].url}}">
                     <span class="fa fa-twitter"></span>
                 </a>
