@@ -28,9 +28,5 @@ function config($stateProvider, $urlServiceProvider) {
 
 };
 
-
-
-
-
 config.$inject = ['$stateProvider', '$urlServiceProvider'];
 export default config;
