@@ -5,7 +5,6 @@ import Search from './components/search/search.module';
 import Home from './components/home/home.module';
 import Videos from './components/videos/videos.module';
 import Card from './components/videos/card/card.module';
-import BandInfo from './components/videos/bandInfo/bandInfo.module';
 import youtubeService from './services/youtube';
 import ticketMasterService from './services/ticketmaster';
 
