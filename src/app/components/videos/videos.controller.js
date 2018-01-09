@@ -11,7 +11,16 @@ class VideosController {
 
     $onInit() {
         this.videos = this.searchResult.items;
-        this.externalLinks = this.bandInfo.externalLinks; 
+        
+        if(this.bandInfo){
+            console.log('ola');
+            this.externalLinks = this.bandInfo.externalLinks; 
+            this.hasBandInfo = true;
+        }else{
+            this.hasBandInfo = false;
+        }
+        
+        console.log(this.hasBandInfo);
         console.log(this.videos);
         console.log(this.bandInfo);
 

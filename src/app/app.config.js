@@ -17,6 +17,10 @@ function config($stateProvider, $urlServiceProvider) {
       bandInfo: function ($transition$, ticketMasterService) {
         let bandName = $transition$.params().bandName;
         return ticketMasterService.getBandInfo(bandName);
+      },
+      bandName: function ($transition$) {
+        let bandName = $transition$.params().bandName;
+        return bandName;
       }
 
     },

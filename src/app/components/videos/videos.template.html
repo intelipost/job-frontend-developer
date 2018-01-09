@@ -6,9 +6,9 @@
 <div id="masonry" class="container">
     <br>
     <div class="card-columns">
-        <div id="bandInfo" class="card">
+        <div ng-if="$ctrl.hasBandInfo" id="bandInfo" class="card">
             <a href="https://www.youtube.com/watch?v={{$ctrl.card.id.videoId}}">
-                <img class="card-img-top" src="{{$ctrl.bandInfo.images[0].url}}" alt="Card image cap">
+                <img src="{{$ctrl.bandInfo.images[0].url}}" class="card-img-top" src="{{$ctrl.bandInfo.images[0].url}}" alt="Card image cap">
             </a>
             <div class="card-body">
                 <h2 class="card-title">{{$ctrl.bandInfo.name}}</h2>
@@ -23,6 +23,17 @@
                 </a>
                 <a ng-if="$ctrl.externalLinks.twitter" class="btn btn-social-icon btn-instagram" href="{{$ctrl.externalLinks.instagram[0].url}}">
                     <span class="fa fa-instagram"></span>
+                </a>
+            </div>
+        </div>
+
+        <div ng-if="!$ctrl.hasBandInfo" id="bandInfo" class="card">
+            <div class="card-body">
+                <h2 class="card-title">{{$ctrl.bandName}}</h2>
+                <a href="{{$ctrl.externalLinks.homepage[0].url}}">
+                    <p class="card-text homepage">Ops, parece que não existem informações cadastradas no TicketMaster do artista
+                        <strong> {{$ctrl.bandName}} </strong>
+                    </p>
                 </a>
             </div>
         </div>
