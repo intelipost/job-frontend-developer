@@ -1,16 +1,12 @@
 # Intelipost: Test for Frontend Javascript Developer
 
-> A AngularJs Front-end Test. [Demo](https://crud-eita.herokuapp.com)
+> An AngularJs Front-end Test.
 
 ![Overview](https://i.imgur.com/OCjt0c0.png)
 ## Features
 - Seach a Band
 - List Top Music Videos of band
 - Show band informations
-
-## Additional features
-- Search contact by name
-- Find by starred or not starred contact
 
 ## Folder structure
 ```sh
