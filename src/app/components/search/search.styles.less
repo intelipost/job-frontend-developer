@@ -1,0 +1,30 @@
+@gray40: #666666;
+@white: #fff;
+
+#custom-search-input {
+	padding: 3px;
+	border: solid 1px #E4E4E4;
+	border-radius: 6px;
+	background-color: @white;
+	input {
+		border: 0;
+		box-shadow: none;
+	}
+	button {
+		margin: 2px 0 0 0;
+		background: none;
+		box-shadow: none;
+		border: 0;
+		color: @gray40;
+		padding: 0 8px 0 10px;
+		border-left: solid 1px #ccc;
+		&:hover {
+			border: 0;
+			box-shadow: none;
+			border-left: solid 1px #ccc;
+		}
+	}
+	.glyphicon-search {
+		font-size: 23px;
+	}
+}

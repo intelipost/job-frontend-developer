@@ -1,0 +1,118 @@
+@white: #fff;
+@gray_20	: #333;
+@gray_70: #ffffff80;
+
+a {
+	color: @white;
+	&:focus {
+		color: @white;
+	}
+	&:hover {
+		color: @white;
+	}
+}
+.btn-secondary {
+	color: @gray_20	;
+	text-shadow: none;
+	background-color: @white;
+	border: .05rem solid #fff;
+	&:hover {
+		color: @gray_20	;
+		text-shadow: none;
+		background-color: @white;
+		border: .05rem solid #fff;
+	}
+	&:focus {
+		color: @gray_20	;
+		text-shadow: none;
+		background-color: @white;
+		border: .05rem solid #fff;
+	}
+}
+html {
+	height: 100%;
+	background-color: @gray_20;
+}
+body {
+	background: url(https://source.unsplash.com/1600x900/?music) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	background-color: @gray_20;
+	text-align: center;
+	color: @white;
+	overflow: hidden;
+}
+.site-wrapper {
+	display: table;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+.site-wrapper-inner {
+	display: table-cell;
+	vertical-align: top;
+}
+.cover-container {
+	margin-right: auto;
+	margin-left: auto;
+}
+.inner {
+	padding: 2rem;
+}
+.masthead {
+	margin-bottom: 2rem;
+}
+.masthead-brand {
+	margin-bottom: 0;
+}
+.cover {
+	padding: 0 1.5rem;
+	.btn-lg {
+		padding: .75rem 1.25rem;
+		font-weight: 700;
+	}
+}
+.mastfoot {
+	color: @gray_70;
+}
+@media (min-width: 48em) {
+	.masthead-brand {
+		float: left;
+	}
+	.nav-masthead {
+		float: right;
+	}
+}
+@media (min-width: 40em) {
+	.masthead {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	.mastfoot {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+	}
+	.site-wrapper-inner {
+		vertical-align: middle;
+	}
+	.cover-container {
+		width: 100%;
+	}
+}
+@media (min-width: 62em) {
+	.masthead {
+		width: 42rem;
+	}
+	.mastfoot {
+		width: 42rem;
+	}
+	.cover-container {
+		width: 42rem;
+	}
+}
