@@ -33,6 +33,12 @@ module.exports = function makeWebpackConfig() {
     app: './src/app/app.js'
   };
 
+  resolve: {
+    alias: {
+      angular: "angular/angular.min.js"
+    }
+  }
+
   /**
    * Output
    * Reference: http://webpack.github.io/docs/configuration.html#output
@@ -88,6 +94,9 @@ module.exports = function makeWebpackConfig() {
       test: /\.js$/,
       loader: 'babel-loader',
       exclude: /node_modules/
+    }, {
+      test: /angular\.min\.js$/,
+      loader: 'exports?angular'
     }, {
       test: /\.less$/,
       use: [{
@@ -188,7 +197,7 @@ module.exports = function makeWebpackConfig() {
 
       // Reference: http://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin
       // Minify all javascript, switch loaders to minimizing mode
-      new webpack.optimize.UglifyJsPlugin(),
+      //new webpack.optimize.UglifyJsPlugin(),
 
       // Copy assets from the public folder
       // Reference: https://github.com/kevlened/copy-webpack-plugin
