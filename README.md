@@ -31,11 +31,11 @@ Você pode gerar suas próprias API Keys para consumir as APIs, mas se quiser us
 
 ### O que nós esperamos do seu teste
 
-* Ver na solução a utilização de um framework da sua escolha, mas por aqui utilizamos o AngularJS 1.x. Utilize o framework da melhor forma possível (metodologia/estrutura). Escolha a versão do ecmascript que lhe agrade
-* Tambér ver a utilização de dependency managers (npm, webpack, bower)
+* Ver na solução a utilização de um framework da sua escolha, mas por aqui utilizamos o VueJS. Utilize o framework da melhor forma possível (metodologia/estrutura). Escolha a versão do ecmascript que lhe agrade
+* Tambér ver a utilização de dependency managers (npm, webpack)
 * Automação de tasks com gulp, grunt ou outra ferramenta de sua escolha
 * Um HTML escrito da maneira mais semântica possível (HTML5/5.1)
-* CSS3/4 - Com um pre processador de CSS (a escolha fica a seu critério, mas por aqui utilizamos LESS)
+* CSS3/4 - Com um pre processador de CSS (a escolha fica a seu critério, mas por aqui utilizamos SASS)
 * Mobile first e layout responsivo
 
 ### O que nós ficaríamos felizes de ver em seu teste
