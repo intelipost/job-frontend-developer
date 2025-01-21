@@ -1,0 +1,16 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: job-frontend-developer
+  description: some description
+  annotations:
+    argocd/app-name: job-frontend-developer
+    github.com/project-slug: intelipost/job-frontend-developer
+    sonarqube.org/project-key: job-frontend-developer
+spec:
+  type: service
+  lifecycle: production
+  owner: devteam
+  childof: 
+    - group:tms-engineering-managers
