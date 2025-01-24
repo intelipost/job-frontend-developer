@@ -10,7 +10,7 @@ metadata:
     sonarqube.org/project-key: job-frontend-developer
 spec:
   type: service
-  lifecycle: production
-  owner: devteam
+  lifecycle: deprecated
+  owner: archive
   childof: 
     - group:tms-engineering-managers
